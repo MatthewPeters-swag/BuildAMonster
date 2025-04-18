@@ -33,7 +33,17 @@ class Monster extends Phaser.Scene {
         // You can also download the asset pack and look in the PNG/default folder.
         my.sprite.body = this.add.sprite(this.bodyX, this.bodyY, "monsterParts", "body_greenD.png");
 
-        
+        my.sprite.body = this.add.sprite(this.bodyX, this.bodyY, "monsterParts", "mouthF.png");
+        my.sprite.leftEye = this.add.sprite(this.bodyX, this.bodyY, "monsterParts", "eye_human_green.png");
+        my.sprite.rightEye = this.add.sprite(this.bodyX, this.bodyY, "monsterParts", "eye_human_green.png");
+
+        my.sprite.leftArm = this.add.sprite(this.bodyX-100, this.bodyY+80, "monsterParts", "arm_darkB.png");
+        my.sprite.rightArm = this.add.sprite(this.bodyX+100, this.bodyY+80, "monsterParts", "arm_darkB.png");
+        my.sprite.leftArm.flipX = true;
+
+        my.sprite.leftLeg = this.add.sprite(this.bodyX, this.bodyY, "monsterParts", "leg_darkB.png");
+        my.sprite.rightLeg = this.add.sprite(this.bodyX, this.bodyY, "monsterParts", "leg_darkB.png");
+        my.sprite.leftLeg.flipX = true;
     }
 
     update() {
